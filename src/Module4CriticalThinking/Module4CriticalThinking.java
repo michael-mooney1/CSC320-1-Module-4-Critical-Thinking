@@ -7,6 +7,7 @@ public class Module4CriticalThinking {
 
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
+		// Setup variables
 		ArrayList<Double> numList = new ArrayList<Double>();
 		double total = 0.0;
 		double avg = 0.0;
@@ -14,6 +15,7 @@ public class Module4CriticalThinking {
 		double min = 0.0;
 		double interest = 0.0;
 		
+		// Get user input of 5 decimal numbers
 		while (true) {
 			if (numList.size() == 5) {
 				break;
@@ -30,6 +32,7 @@ public class Module4CriticalThinking {
 			}
 		}
 		
+		// Perform calculations
 		max = numList.get(0);
 		min = numList.get(0);
 		for (double num : numList) {
@@ -40,6 +43,7 @@ public class Module4CriticalThinking {
 		avg = total / numList.size();
 		interest = total * 0.2;
 		
+		// Output values
 		System.out.println("Total: " + total);
 		System.out.println("Average: " + avg);
 		System.out.println("Maximum: " + max);
